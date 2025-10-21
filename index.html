@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kerkmann Studio – Design. Technik. Automatisierung.</title>
+    <meta name="description" content="Kerkmann Studio: Moderne, minimalistische Singlepage für 3D‑Visualisierung, KI‑Stockfotografie, Webdesign und Automatisierung.">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav__inner">
+        <div class="logo">Kerkmann<span>Studio</span></div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#services">Leistungen</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Prozess</a>
+          <a href="#about">Über&nbsp;mich</a>
+          <a href="#contact" class="btn">Projekt anfragen</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__text">
+            <h1>Design. Technik. Automatisierung.</h1>
+            <p>Visualisierungen und Systeme, die nicht nur gut aussehen, sondern messbar funktionieren.</p>
+            <div class="cta-row">
+              <a class="btn btn--primary" href="#contact">Jetzt anfragen</a>
+              <a class="btn btn--ghost" href="#portfolio">Referenzen</a>
+            </div>
+          </div>
+          <div class="hero__art" aria-hidden="true">
+            <div class="orb orb--1"></div>
+            <div class="orb orb--2"></div>
+            <div class="orb orb--3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section__title">Leistungen</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon">🎛️</div>
+              <h3>3D‑ & Architekturvisualisierung</h3>
+              <p>Fotorealistische Renderings für Architektur, Interior und Produkte.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">✨</div>
+              <h3>KI‑Stockfotografie</h3>
+              <p>Kommerzielle AI‑Bildproduktion mit automatisierten Pipelines.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">💻</div>
+              <h3>Webdesign</h3>
+              <p>Schnelle, saubere Singlepages mit Fokus auf Conversion.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">⚙️</div>
+              <h3>Automatisierung</h3>
+              <p>CSV‑, API‑ und Upload‑Workflows zur Skalierung deiner Inhalte.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon">💡</div>
+              <h3>Beratung</h3>
+              <p>Strategie, Prozesse und technische Umsetzung aus einer Hand.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section section--alt">
+        <div class="container">
+          <h2 class="section__title">Portfolio</h2>
+          <div class="grid">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <h2 class="section__title">Prozess</h2>
+          <ol class="steps">
+            <li><span>01</span> Ziel klären • Use‑Case, Budget, Timing.</li>
+            <li><span>02</span> Konzept • Struktur, Stilrichtung, Deliverables.</li>
+            <li><span>03</span> Produktion • Renderings, Layout, Code.</li>
+            <li><span>04</span> Automatisierung • Pipelines und Deploy.</li>
+            <li><span>05</span> Launch & Hand‑off • Dokumentation, Übergabe.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt">
+        <div class="container">
+          <h2 class="section__title">Über mich</h2>
+          <p class="lead">Ich baue Systeme, die kreatives Output mit technischer Robustheit verbinden. Fokus auf Klarheit, Geschwindigkeit und Skalierung.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section__title">Kontakt</h2>
+          <form class="contact" onsubmit="return window.submitContact(event)">
+            <div class="row">
+              <input type="text" name="name" placeholder="Dein Name" required>
+              <input type="email" name="email" placeholder="E‑Mail" required>
+            </div>
+            <textarea name="message" rows="6" placeholder="Projektidee in 2–3 Sätzen" required></textarea>
+            <button class="btn btn--primary" type="submit">Senden</button>
+            <p id="contact-status" class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© Kerkmann Studio – Kerkmann Studio: Moderne, minimalistische Singlepage für 3D‑Visualisierung, KI‑Stockfotografie, Webdesign und Automatisierung.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
